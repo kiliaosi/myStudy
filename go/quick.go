@@ -28,7 +28,7 @@ func quickSort(arr []int) []int{
 	}
 
 
-	//return left\
+	//return left
 	left = append(left,middle)
 	//return left
 	return append(quickSort(left),quickSort(right)...)
