@@ -3,8 +3,8 @@ package main
 import "fmt"
 
 func main(){
-	var arr = []int{1,3,4,5,2,123,4,5,321,3,3,4,5,12,32123,89};
-	var diff = quickSort(arr)
+	var arr = [...]int{1,3,4,5,2,123,4,5,321,3,3,4,5,12,32123,89};
+	var diff = quickSort(arr[:])
 	fmt.Println(diff)
 	}
 func quickSort(arr []int) []int{
